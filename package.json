@@ -1,8 +1,8 @@
 {
-  "name": "cucumber-complete",
+  "name": "gherkin-autocomplete",
   "main": "./lib/main",
-  "version": "0.6.3",
-  "description": "Autocompletes based on you defined cucumber steps",
+  "version": "1.0.0",
+  "description": "Autocompletes steps from feature files in your product.",
   "keywords": [],
   "license": "MIT",
   "engines": {
@@ -16,10 +16,13 @@
     }
   },
   "devDependencies": {
+    "babel-eslint": "^6.1.0",
     "request": "^2.53.0",
     "temp": "^0.8.1"
   },
-  "dependencies": {},
+  "dependencies": {
+    "async": "^2.0.0-rc.6"
+  },
   "scripts": {
     "test": "apm test"
   }
