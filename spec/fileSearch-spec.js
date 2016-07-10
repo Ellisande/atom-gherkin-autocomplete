@@ -184,4 +184,17 @@ describe('file search', () => {
       });
     });
   });
+
+  describe('search files', () => {
+    it('should return all gherkin steps under the directory', () => {
+      const searcher = new FileSearch();
+      const directory = new Directory(`${rootDirectory}/spec/features`);
+      return new Promise((resolve, reject) => {
+        searcher.searchFiles(directory).then(snippets => {
+          expect(snippets.length).toEqual(5);
+          resolve();
+        }).catch(reject);
+      });
+    });
+  });
 });
