@@ -3,6 +3,10 @@
   "main": "./lib/main",
   "version": "1.0.0",
   "description": "Autocompletes steps from feature files in your product.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ellisande/atom-gherkin-autocomplete"
+  },
   "keywords": [
     "atom",
     "gherkin",
