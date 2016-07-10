@@ -17,6 +17,7 @@
   },
   "devDependencies": {
     "babel-eslint": "^6.1.0",
+    "mockolate": "^3.1.0",
     "request": "^2.53.0",
     "temp": "^0.8.1"
   },
