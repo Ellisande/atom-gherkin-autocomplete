@@ -191,7 +191,7 @@ describe('file search', () => {
       const directory = new Directory(`${rootDirectory}/spec/features`);
       return new Promise((resolve, reject) => {
         searcher.searchFiles(directory).then(snippets => {
-          expect(snippets.length).toEqual(5);
+          expect(snippets.length).toEqual(6);
           resolve();
         }).catch(reject);
       });
