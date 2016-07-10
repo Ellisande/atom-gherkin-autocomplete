@@ -3,17 +3,16 @@
   "main": "./lib/main",
   "version": "1.0.0",
   "description": "Autocompletes steps from feature files in your product.",
-  "keywords": [],
-  "license": "MIT",
-  "engines": {
-    "atom": ">=1.0.0 <2.0.0"
-  },
   "keywords": [
     "atom",
     "gherkin",
     "suggestions",
     "autocomplete"
   ],
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
   "author": {
     "name": "Justin Dragos",
     "email": "justindrago.s@gmail.com",
@@ -30,7 +29,8 @@
     "mockolate": "^3.1.0"
   },
   "dependencies": {
-    "async": "^2.0.0-rc.6"
+    "async": "^2.0.0-rc.6",
+    "lodash": "^4.13.1"
   },
   "scripts": {
     "test": "apm test"
