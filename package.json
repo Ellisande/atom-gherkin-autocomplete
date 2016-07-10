@@ -8,6 +8,12 @@
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
   },
+  "keywords": [
+    "atom",
+    "gherkin",
+    "suggestions",
+    "autocomplete"
+  ],
   "author": {
     "name": "Justin Dragos",
     "email": "justindrago.s@gmail.com",
