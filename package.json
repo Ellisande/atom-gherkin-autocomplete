@@ -1,7 +1,7 @@
 {
   "name": "gherkin-autocomplete",
   "main": "./lib/main",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Autocompletes steps from feature files in your product.",
   "repository": {
     "type": "git",
