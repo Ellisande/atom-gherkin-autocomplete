@@ -8,6 +8,11 @@
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
   },
+  "author": {
+    "name": "Justin Dragos",
+    "email": "justindrago.s@gmail.com",
+    "url": "https://github.com/Ellisande"
+  },
   "providedServices": {
     "autocomplete.provider": {
       "versions": {
@@ -16,10 +21,7 @@
     }
   },
   "devDependencies": {
-    "babel-eslint": "^6.1.0",
-    "mockolate": "^3.1.0",
-    "request": "^2.53.0",
-    "temp": "^0.8.1"
+    "mockolate": "^3.1.0"
   },
   "dependencies": {
     "async": "^2.0.0-rc.6"
