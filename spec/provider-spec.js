@@ -1,32 +1,30 @@
 'use babel';
 import provider from '../lib/provider';
-import {mockFunction} from 'mockolate';
+import {
+  mockFunction
+} from 'mockolate';
 describe("provider", () => {
   describe("config options", () => {
     let options;
     beforeEach(() => {
-      atom.config.set('gherkin-autocomplete.featurePath', '/features');
       atom.config.set('gherkin-autocomplete.followSymlinks', true);
-      atom.config.set('gherkin-autocomplete.searchSubdirectories', true);
-      atom.config.set('gherkin-autocomplete.searchFeatures', true);
       atom.config.set('gherkin-autocomplete.maxDepth', 100);
+
+      atom.config.set('gherkin-autocomplete.featureSettings.scanPath', '/features');
+      atom.config.set('gherkin-autocomplete.featureSettings.enabled', true);
       options = provider.getConfigOptions();
     });
 
     it('should be able to retreive the feature path', () => {
-      expect(options.featurePath).toEqual('/features');
+      expect(options.featureSettings.scanPath).toEqual('/features');
     });
 
     it('should be able to get the option for following symbolic links', () => {
       expect(options.followSymlinks).toEqual(true);
     });
 
-    it('should be able to get the option for searching sub-directories', () => {
-      expect(options.searchSubdirectories).toEqual(true);
-    });
-
     it('should be able to get the option for searching features', () => {
-      expect(options.searchFeatures).toEqual(true);
+      expect(options.featureSettings.enabled).toEqual(true);
     });
 
     it('should be able to get the maximum search depth', () => {
